@@ -54,6 +54,11 @@ input type:touchpad {
 	tap enabled
 }
 
+input type:tablet_tool {
+	map_to_output VGA-1
+	left_handed enabled
+}
+
 ### Key bindings
 #
 #
