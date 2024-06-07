@@ -6,11 +6,11 @@
 !.config/alacritty
 !.config/alacritty/**
 !.config/gtk-3.0
-!.config/gtk-3.0/**
+!.config/gtk-3.0/settings.ini
 !.config/mpd
 !.config/mpd/**
 !.config/ncmpcpp
-!.config/ncmpcpp/**
+!.config/ncmpcpp/config
 !.config/sway
 !.config/sway/**
 !.config/waybar
@@ -19,4 +19,5 @@
 !.gnupg/gpg-agent.conf
 !.vim
 !.vim/**
+.vim/.netrwhist
 !.vimrc
