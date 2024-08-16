@@ -4,7 +4,9 @@
 
 # Aliases
 alias ls="ls --color=auto"
-alias ll="ls -l"
+alias ll="ls -alF"
+alias l="ls -CF"
+alias ccd="clear && cd"
 
 # Prompt
 _BROS="\e[48;2;214;67;108m"
