@@ -1,0 +1,84 @@
+{
+	"height": 32,
+	"spacing": 4,
+	// Choose the order of the modules
+	"modules-left": ["sway/workspaces"],
+	"modules-center": ["mpd"],
+	"modules-right": ["pulseaudio", "backlight", "network", "temperature", "battery", "sway/language", "clock", "tray"],
+	"sway/workspaces": {
+		"format": "{icon}",
+		"format-icons": {
+				"1": "󰇮",
+				"2": "󰝚",
+				"3": "󰈹",
+				"4": "",
+				"5": "",
+				"6": "",
+			//	"urgent": "",
+			//	"focused": "",
+				"default": ""
+		}
+	},
+	"mpd": {
+		"server": "~/.mpd/socket",
+		"format": "{stateIcon} {artist} - {title}",
+		"format-disconnected": "Nothing playing 󰱶",
+		"format-stopped": "Nothing playing 󰱶",
+		"unknown-tag": "N/A",
+		"interval": 2,
+		"state-icons": {
+			"paused": "󰏤",
+			"playing": "󰐊"
+		},
+		"tooltip-format": "MPD (connected)",
+		"tooltip-format-disconnected": "MPD (disconnected)"
+	},
+	"pulseaudio": {
+		"scroll-step": 5,
+		"format": "{icon} {volume} %",
+		"format-muted": "󰝟 {volume} %",
+		"format-icons": {
+			"default": ["󰕿", "󰖀", "󰕾"]
+		},
+		"on-click": "pavucontrol"
+	},
+	"network": {
+		"format-wifi": "󰖩 {essid} ({signalStrength} %)",
+		"format-ethernet": "󰖩 {ipaddr}/{cidr}",
+		"format-disconnected": "󰌙 Disconnected ",
+		"tooltip-format": "{ifname} via {gwaddr}",
+		"format-linked": "{ifname} (No IP)"
+	},
+	"temperature": {
+		"critical-threshold": 80,
+		"format": "{icon} {temperatureC} °C",
+		"format-icons": ["󱃃", "󰔏", "󱃂"]
+	},
+	"backlight": {
+		"format": "{icon} {percent} %",
+		"format-icons": ["", "", "", "", "", "", "", "", "", "", "", "", "", "", ""]
+	},
+	"battery": {
+		"states": {
+			// "good": 95,
+			"warning": 30,
+			"critical": 15
+		},
+		"format": "{icon} {capacity} %",
+		"format-charging": "󰂄 {capacity} %",
+		"format-plugged": "󰂄 {capacity} %",
+		"format-alt": "{icon} {time}",
+		"format-icons": ["󰂎", "󰁺", "󰁻", "󰁼", "󰁽", "󰁾", "󰁿", "󰂀", "󰂁", "󰂂", "󰁹"]
+	},
+	"tray": {
+		"icon-size": 16,
+		"spacing": 8
+	},
+	"clock": {
+		// "timezone": "America/New_York",
+		//"format": "{%h::%m}",
+		"tooltip-format": "<big>{:%Y %B}</big>\n<tt><small>{calendar}</small></tt>",
+		"format-alt": "{:%Y-%m-%d}"
+	},
+}
+
