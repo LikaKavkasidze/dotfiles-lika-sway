@@ -2,10 +2,6 @@
 #
 set $mod Mod4
 set $term alacritty
-# Note: pass the final command to swaymsg so that the resulting window can be opened
-# on the original workspace that the command was run on.
-set $menu wofi --show run | xargs swaymsg exec --
-set $pass wofi-pass -t | xargs swaymsg exec --
 
 ### Output configuration
 output * {
@@ -62,8 +58,12 @@ input type:touchpad {
 #
 #
 	bindsym $mod+Return exec $term
-	bindsym $mod+r exec $menu
-	bindsym $mod+p exec $pass
+	bindsym $mod+w exec $term -e ncmpcpp
+	# Note: pass the final command to swaymsg so that the resulting window can be opened
+	# on the original workspace that the command was run on.
+	bindsym $mod+r exec wofi --show run | xargs swaymsg exec --
+	bindsym $mod+p exec wofi-pass -st
+	bindsym $mod+c exec wofi-calc
 
 	bindsym $mod+Shift+c kill
 	bindsym $mod+Shift+r reload
