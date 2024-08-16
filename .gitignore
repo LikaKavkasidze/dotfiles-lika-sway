@@ -5,6 +5,8 @@
 !.config
 !.config/alacritty
 !.config/alacritty/**
+!.config/gtk-3.0
+!.config/gtk-3.0/**
 !.config/mpd
 !.config/mpd/**
 !.config/ncmpcpp
