@@ -20,7 +20,7 @@
 		}
 	},
 	"mpd": {
-		"server": "~/.mpd/socket",
+		"server": "/home/lika/.mpd/socket",
 		"format": "{stateIcon} {artist} - {title}",
 		"format-disconnected": "Nothing playing 󰱶",
 		"format-stopped": "Nothing playing 󰱶",

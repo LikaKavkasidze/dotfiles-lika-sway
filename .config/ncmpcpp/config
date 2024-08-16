@@ -25,7 +25,7 @@ mpd_host = ~/.mpd/socket
 #
 ## Needed for tag editor and file operations to work.
 ##
-mpd_music_dir = ~/Musique
+mpd_music_dir = /home/shared/Musique
 #
 #mpd_crossfade_time = 5
 #
