@@ -18,9 +18,6 @@ _SS=$'\ue0b0'
 
 PS1="\[$_ESC$_BROS\] \u@\h \[$_ESC$_FROS$_BORA\]$_SS\[$_ESC$_BORA\] \w \[$_ESC$_FORA\]$_SS\[$_ESC\] "
 
-# Keybindings
-bind '\e[Z:menu-complete'
-
 # Exports
 export EDITOR="vim"
 export HISTTIMEFORMAT="[%F %T] "
