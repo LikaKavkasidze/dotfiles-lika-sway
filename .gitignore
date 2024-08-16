@@ -15,6 +15,8 @@
 !.config/sway/**
 !.config/waybar
 !.config/waybar/**
+!.gnupg
+!.gnupg/gpg-agent.conf
 !.vim
 !.vim/**
 !.vimrc
