@@ -5,7 +5,6 @@
 # Aliases
 alias ls="ls --color=auto"
 alias ll="ls -alF"
-alias l="ls -CF"
 alias ccd="clear && cd"
 
 # Prompt
