@@ -7,6 +7,10 @@ alias ls="ls --color=auto"
 alias ll="ls -alF"
 alias ccd="clear && cd"
 
+function jcurl() {
+	curl -s "$@" | jq
+}
+
 # Prompt
 _BROS="\e[48;2;214;67;108m"
 _FROS="\e[38;2;214;67;108m"
