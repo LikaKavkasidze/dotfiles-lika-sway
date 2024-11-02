@@ -21,7 +21,7 @@ mouse = "Middle"
 [selection]
 save_to_clipboard = false
 
-[shell]
+[terminal.shell]
 program = "/bin/bash"
 
 [window]
