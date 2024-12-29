@@ -33,12 +33,17 @@ exec swayidle -w \
 	timeout 300 'swaylock -f -c 000000' \
 	timeout 600 'swaymsg "output * power off"' resume 'swaymsg "output * power on"' \
 	before-sleep 'swaylock -f -c 000000'
+# Typing languages is handled through fcitx5.
+exec fcitx5
 
 ### Input configuration
 input type:keyboard {
 	xkb_model thinkpad
-	xkb_layout fr,ru,ge
-	xkb_variant afnor,typewriter,
+	# With fcitx5, keyboard layout should always be set to default,
+	# ie. fr-afnor. fcitx5 will then use it's internal conversion
+	# mechanism.
+	xkb_layout fr
+	xkb_variant afnor
 	xkb_numlock enabled
 }
 
@@ -136,10 +141,13 @@ input type:tablet_tool {
 
 	# Switch kayboard layout using codes, to avoid getting
 	# locked in any given layout.
-	# 41 = f (fr), 27 = r (ru), 42 = g (ge)
-	bindcode $mod+Control+41 input type:keyboard xkb_switch_layout 0
-	bindcode $mod+Control+27 input type:keyboard xkb_switch_layout 1
-	bindcode $mod+Control+42 input type:keyboard xkb_switch_layout 2
+	# 41 = f (fr), 27 = r (ru), 42 = g (ka)
+	# 45 = k (ko), 25 = z (zh)
+	bindcode $mod+Control+41 exec fcitx5-remote -s keyboard-fr-afnor
+	bindcode $mod+Control+27 exec fcitx5-remote -s keyboard-ru-typewriter
+	bindcode $mod+Control+42 exec fcitx5-remote -s keyboard-ge-mess
+	bindcode $mod+Control+45 exec fcitx5-remote -s hangul
+	bindcode $mod+Control+25 exec fcitx5-remote -s rime
 
 	bindsym $mod+Shift+s exec systemctl suspend
 	bindsym $mod+Shift+p exec systemctl poweroff

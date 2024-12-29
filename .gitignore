@@ -5,6 +5,8 @@
 !.config
 !.config/alacritty
 !.config/alacritty/**
+!.config/fcitx5
+!.config/fcitx5/**
 !.config/gtk-3.0
 !.config/gtk-3.0/settings.ini
 !.config/mako

@@ -1,0 +1,56 @@
+[Groups/0]
+# Group Name
+Name="Main group"
+# Layout
+Default Layout=fr-afnor
+# Default Input Method
+DefaultIM=keyboard-ru-typewriter
+
+[Groups/0/Items/0]
+# Name
+Name=keyboard-fr-afnor
+# Layout
+Layout=
+
+[Groups/0/Items/1]
+# Name
+Name=keyboard-ru-typewriter
+# Layout
+Layout=
+
+[Groups/0/Items/2]
+# Name
+Name=keyboard-ge-mess
+# Layout
+Layout=
+
+[Groups/0/Items/3]
+# Name
+Name=hangul
+# Layout
+Layout=
+
+[Groups/0/Items/4]
+# Name
+Name=rime
+# Layout
+Layout=
+
+[Groups/1]
+# Group Name
+Name="Fallback"
+# Layout
+Default Layout=us
+# Default Input Method
+DefaultIM=keyboard-us
+
+[Groups/1/Items/0]
+# Name
+Name=keyboard-us
+# Layout
+Layout=
+
+[GroupOrder]
+0="Main group"
+1="Fallback"
+

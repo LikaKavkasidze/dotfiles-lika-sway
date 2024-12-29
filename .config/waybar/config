@@ -4,7 +4,7 @@
 	// Choose the order of the modules
 	"modules-left": ["sway/workspaces"],
 	"modules-center": ["mpd"],
-	"modules-right": ["pulseaudio", "backlight", "network", "temperature", "battery", "sway/language", "clock", "tray"],
+	"modules-right": ["pulseaudio", "backlight", "network", "temperature", "battery", "clock", "tray"],
 	"sway/workspaces": {
 		"format": "{icon}",
 		"format-icons": {
