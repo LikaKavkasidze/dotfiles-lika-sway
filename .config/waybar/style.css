@@ -4,8 +4,8 @@
 }
 
 window#waybar {
-	background-color: rgba(60, 60, 60, 0.4);
-	border-bottom: 3px solid rgba(180, 180, 180, 0.6);
+	background-color: rgba(60, 60, 60, 0.5);
+	border-bottom: 3px solid rgba(180, 180, 180, 0.3);
 	color: #ffffff;
 }
 
