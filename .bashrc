@@ -6,6 +6,7 @@
 alias ls="ls --color=auto"
 alias ll="ls -alF"
 alias ccd="clear && cd"
+alias ssh-hosts="grep 'Host ' ~/.ssh/config | sed 's/Host //'"
 
 function jcurl() {
 	curl -s "$@" | jq
