@@ -139,15 +139,15 @@ input type:tablet_tool {
 	bindsym $mod+b splith
 	bindsym $mod+v splitv
 
-	# Switch kayboard layout using codes, to avoid getting
+	# Switch keyboard layout using codes, to avoid getting
 	# locked in any given layout.
 	# 41 = f (fr), 27 = r (ru), 42 = g (ka)
-	# 45 = k (ko), 25 = z (zh)
+	# 25 = z (zh), 26 = e (fa)
 	bindcode $mod+Control+41 exec fcitx5-remote -s keyboard-fr-afnor
 	bindcode $mod+Control+27 exec fcitx5-remote -s keyboard-ru-typewriter
 	bindcode $mod+Control+42 exec fcitx5-remote -s keyboard-ge-mess
-	bindcode $mod+Control+45 exec fcitx5-remote -s hangul
 	bindcode $mod+Control+25 exec fcitx5-remote -s rime
+	bindcode $mod+Control+26 exec fcitx5-remote -s keyboard-ir
 
 	bindsym $mod+Shift+s exec systemctl suspend
 	bindsym $mod+Shift+p exec systemctl poweroff
