@@ -42,6 +42,8 @@ export HISTFILESIZE=500000
 
 # Exports
 export EDITOR="vim"
+export LEDGER_INPUT_DATE_FORMAT="%d/%m/%Y"
+export LEDGER_DATE_FORMAT="%d/%m/%Y"
 
 # Completion
 [ -s "/etc/bash_completion.d/pass-otp" ] && \. /etc/bash_completion.d/pass-otp
