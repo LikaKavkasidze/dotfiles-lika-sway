@@ -27,6 +27,13 @@ output "BNQ BenQ GL2250H C7E06713019" {
 	pos -1920 0
 }
 
+# Nexedi's office screen
+output "Iiyama North America PL2493H 1175005110532" {
+  enable
+	resolution 1920x1080
+	pos 1600 0
+}
+
 ### Startup commands
 exec mpd
 exec swayidle -w \
