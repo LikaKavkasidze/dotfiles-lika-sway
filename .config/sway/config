@@ -196,6 +196,6 @@ bar {
 }
 
 default_border none
-gaps inner 5
+gaps inner 8
 
 include /etc/sway/config.d/*
