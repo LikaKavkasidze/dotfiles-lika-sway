@@ -45,6 +45,8 @@ export EDITOR="vim"
 export LEDGER_INPUT_DATE_FORMAT="%d/%m/%Y"
 export LEDGER_DATE_FORMAT="%d/%m/%Y"
 
+[ -z "$SSH_AUTH_SOCK" -a -f ~/.ssh_agent_env ] && source ~/.ssh_agent_env
+
 # Completion
 [ -s "/etc/bash_completion.d/pass-otp" ] && \. /etc/bash_completion.d/pass-otp
 
