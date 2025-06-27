@@ -8,7 +8,7 @@ foreground = "#fbeeec"
 TERM = "xterm-256color"
 
 [font]
-size = 12.0
+size = 11.0
 offset.y = 2
 
 [font.normal]
@@ -27,5 +27,5 @@ program = "/bin/bash"
 [window]
 decorations = "none"
 opacity = 0.95
-padding.x = 10
-padding.y = 10
+padding.x = 16
+padding.y = 16
