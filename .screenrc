@@ -1,0 +1,8 @@
+startup_message off
+
+hardstatus off
+hardstatus alwayslastline
+hardstatus string "%{= #fbeeec;#703782} %-Lw%n%f %t%+Lw %=%{= .;#9f3566} %c "
+
+termcapinfo xterm* ti@:te@
+truecolor on

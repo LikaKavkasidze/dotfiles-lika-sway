@@ -23,6 +23,7 @@
 !.config/zim/style.conf
 !.gnupg
 !.gnupg/gpg-agent.conf
+!.screenrc
 !.vim
 !.vim/**
 .vim/.netrwhist
