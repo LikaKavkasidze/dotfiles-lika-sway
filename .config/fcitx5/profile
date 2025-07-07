@@ -40,11 +40,17 @@ Layout=
 
 [Groups/1/Items/3]
 # Name
-Name=keyboard-ir
+Name=keyboard-kz
 # Layout
 Layout=
 
 [Groups/1/Items/4]
+# Name
+Name=keyboard-ir
+# Layout
+Layout=
+
+[Groups/1/Items/5]
 # Name
 Name=rime
 # Layout
