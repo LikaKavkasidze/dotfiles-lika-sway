@@ -157,6 +157,7 @@ input type:tablet_tool {
 	bindcode $mod+Control+26 exec fcitx5-remote -s keyboard-ir
 
 	bindsym $mod+Shift+s exec systemctl suspend
+	bindsym $mod+Shift+l exec swaylock -f -c 000000
 	bindsym $mod+Shift+p exec systemctl poweroff
 
 	# Make the current focus fullscreen
