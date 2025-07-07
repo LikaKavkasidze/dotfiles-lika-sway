@@ -29,7 +29,7 @@ output "BNQ BenQ GL2250H C7E06713019" {
 
 # Nexedi's office screen
 output "Iiyama North America PL2493H 1175005110532" {
-  enable
+	enable
 	resolution 1920x1080
 	pos 1600 0
 }
@@ -37,9 +37,10 @@ output "Iiyama North America PL2493H 1175005110532" {
 ### Startup commands
 exec mpd
 exec swayidle -w \
-	timeout 300 'swaylock -f -c 000000' \
-	timeout 600 'swaymsg "output * power off"' resume 'swaymsg "output * power on"' \
+	timeout 180 'swaylock -f -c 000000' \
+	timeout 300 'swaymsg "output * power off"' resume 'swaymsg "output * power on"' \
 	before-sleep 'swaylock -f -c 000000'
+
 # Typing languages is handled through fcitx5.
 exec fcitx5
 
