@@ -15,6 +15,11 @@ output eDP-1 {
 	pos 0 0
 }
 
+output HEADLESS-1 {
+	enable
+	resolution 1920x1080
+}
+
 output "BNQ BenQ GL955 X9E01468019" {
 	enable
 	resolution 1366x768
@@ -43,6 +48,7 @@ exec swayidle -w \
 
 # Typing languages is handled through fcitx5.
 exec fcitx5
+exec wayvnc
 
 ### Input configuration
 input type:keyboard {
