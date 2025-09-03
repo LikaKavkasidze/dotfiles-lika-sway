@@ -6,7 +6,7 @@ set $term alacritty
 ### Output configuration
 output * {
 	disable
-	bg ~/Images/Wallpapers/Taylor_Own_Kid_Final.png fill
+	bg ~/Images/Wallpapers/Gafsou_Jeunesses_Final.png fill
 }
 
 output eDP-1 {
